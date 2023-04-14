@@ -1,0 +1,10 @@
+.navItem{
+    font-family: 'Open Sans Condensed Regular' !important;
+    color: white !important;
+    font-style: normal !important;
+    padding: 1.4rem !important;
+    font-size: 1.2rem !important;
+}
+.navItem:hover{
+    color: #fe00fd !important;
+}
