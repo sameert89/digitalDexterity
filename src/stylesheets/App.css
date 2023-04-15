@@ -53,6 +53,11 @@
   src: url("../fonts/cyberway.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+}
+
 .term1 {
   margin-top: 6em;
   margin-left: 3em;
@@ -87,14 +92,62 @@
   background-image: -webkit-linear-gradient(270deg, #fe00f4 30%, black 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  text-fill-color: transparent;
+  /* text-fill-color: transparent; */
   -webkit-text-fill-color: transparent;
-
-
   text-align: center;
 }
 
-.second_container{
+@media screen and (max-width: 1000px) {
+  .title {
+    font-size: 5em;
+  }
+}
+
+.second_container {
   height: 100vh;
   background-color: black;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.second_terminal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4em;
+}
+
+.third_container {
+  height: 100vh;
+  padding: 0 8em;
+}
+
+.icon_set {
+  display: inline-grid;
+  gap: 4em;
+  column-gap: 5em;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.fourth_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.fifth_container {
+  height: 100vh;
+  padding: 0 8em;
+}
+
+.btns {
+  display: grid;
+  margin-top: 8em;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 10em;
 }

@@ -2,7 +2,6 @@
 import '../stylesheets/Terminal.css';
 import React, { useEffect, useState } from "react";
 import { TypeAnimation } from 'react-type-animation';
-import { term1Text } from '../Data';
 function Terminal(props){
     //what will the props have to provide
     //some kind of formatting like whatsapp increasing the size of the text
@@ -27,9 +26,9 @@ function Terminal(props){
           });
         };
       }, []);    
-    const tWidth = windowSize.width/2.3;
-    const tHeight = windowSize.height/2.46;
-    const buttonDim = tWidth/39;
+    const tWidth = windowSize.width/props.sizer.w;
+    const tHeight = windowSize.height/props.sizer.h;
+    const buttonDim = tWidth/45;
     return(
         <div className="terminal" style={{width: tWidth, height: tHeight}}>
             <div className='buttons'>
@@ -38,9 +37,9 @@ function Terminal(props){
                 <div className='button' style={{backgroundColor: 'green', width: buttonDim, height: buttonDim}}></div>
             </div>
             <TypeAnimation
-                sequence = {term1Text}
+                sequence = {props.text}
                 speed = {40}
-                style = {{fontSize: '1.7em', fontFamily: 'Consolas', color: 'white', opacity: 1}}
+                style = {{fontSize: props.sizer.f, fontFamily: 'Consolas', color: 'white', opacity: 1, padding: '0 1em'}}
                 repeat = {Infinity}
                 omitDeletionAnimation = {true}
             />
