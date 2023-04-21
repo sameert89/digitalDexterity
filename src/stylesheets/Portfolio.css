@@ -1,0 +1,131 @@
+/* Custom Font Faces */
+@font-face {
+  font-family: "Open Sans Condensed Regular";
+  src: url("../fonts/os_condensed.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Consolas";
+  src: url("../fonts/consola.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cyberway";
+  src: url("../fonts/cyberway.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+/* Sections */
+
+.section1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100vh;
+  align-items: flex-end;
+}
+
+.section2 {
+  height: 100vh;
+  background-color: black;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.section3 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about_terminal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4em;
+}
+
+.section4 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.term1 {
+  margin-top: 6em;
+  margin-left: 3em;
+  padding-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section5 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Standalone Components */
+
+.title {
+  font-size: 8em;
+  font-family: 'Cyberway';
+  color: #fe00f4;
+  margin-top: .5em;
+  background-image: -webkit-linear-gradient(270deg, #fe00f4 30%, black 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .title {
+    font-size: 5em;
+  }
+}
+
+.banner_image {
+  overflow: hidden;
+  max-width: 40%;
+  max-height: 70%;
+  margin-top: 8em;
+}
+
+
+.icon_set {
+  display: inline-grid;
+  gap: 4em;
+  column-gap: 5em;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btns {
+  display: grid;
+  margin-top: 8em;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2em;
+  padding: 0 10em;
+}
+
+
+
+
+
+
+
+
+
+
+

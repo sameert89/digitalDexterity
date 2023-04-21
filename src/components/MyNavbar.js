@@ -1,14 +1,15 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import "./stylesheets/MyNavbar.css"
+import "../stylesheets/MyNavbar.css"
+import { Outlet, Link } from 'react-router-dom';
 function MyNavbar() {
     return (
         <Navbar bg="none" fixed = "top">
             <Container>
                 <Nav className='ms-auto'>
-                    <Nav.Link className='navItem' href="#home">Home</Nav.Link>
-                    <Nav.Link className='navItem' href="#home">Blog</Nav.Link>
+                    <Link to='/' style={{ textDecoration: 'none' }}><Nav.Link className='navItem' href="#home">Home</Nav.Link></Link>
+                    <Link to='blog' style={{ textDecoration: 'none' }}><Nav.Link className='navItem' href="#home">Blog</Nav.Link></Link>
                     <Nav.Link className='navItem' href="#home">Contact Me</Nav.Link>
                     <Nav.Link className='navItem' href="#home">Console</Nav.Link>
                 </Nav>

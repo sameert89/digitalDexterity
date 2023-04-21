@@ -1,13 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter} from "react-router-dom";
 import './stylesheets/index.css';
-import App from './App';
+import Header from './components/MyNavbar';
+import BG from './components/MatrixRain';
+
 import reportWebVitals from './reportWebVitals';
+
+import AnimatedRoutes from './routes/AnimatedRoutes';
+
+// const router = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: <App/>
+//   },
+//   {
+//     path: 'blog',
+//     element: <Blog />
+//   }
+// ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <RouterProvider router={router} /> */}
+    <BrowserRouter basename='/'>
+      <Header />
+      <AnimatedRoutes />
+      <BG />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

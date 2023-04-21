@@ -4,7 +4,18 @@
     font-style: normal !important;
     padding: 1.4rem !important;
     font-size: 1.2rem !important;
+    text-decoration: none !important;
 }
 .navItem:hover{
     color: #fe00fd !important;
 }
+.navbar > .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    margin: 0;
+    padding: 0;
+  }

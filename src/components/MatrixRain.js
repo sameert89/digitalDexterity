@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-
 function MatrixBackground({ timeout = 50 }) {
     const canvas = useRef();
 
     useEffect(() => {
         const context = canvas.current.getContext('2d');
         const width = document.body.offsetWidth;
-        const height = document.body.offsetHeight;
+        // const height = document.body.offsetHeight;
+        const height = 1000;
         canvas.current.width = width;
         canvas.current.height = height;
 
@@ -46,8 +46,10 @@ function MatrixBackground({ timeout = 50 }) {
     }, [canvas, timeout]);
 
     return (
-        <div
+        <div 
             style={{
+                WebkitFilter: 'blur(1px)',
+                transform: 'scale(1.1)',
                 background: '#000000',
                 overflow: 'hidden',
                 position: 'fixed',
