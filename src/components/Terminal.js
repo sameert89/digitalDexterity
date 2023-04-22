@@ -1,7 +1,30 @@
-// import terminal from '../../public/Terminal.png'
 import '../stylesheets/Terminal.css';
 import React, { useEffect, useState } from "react";
 import { TypeAnimation } from 'react-type-animation';
+const getWindowDimensions = () => {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+};
+
+const useWindowDimensions = () => {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+  window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowDimensions;
+};
 function Terminal(props){
     //what will the props have to provide
     //some kind of formatting like whatsapp increasing the size of the text
@@ -12,22 +35,9 @@ function Terminal(props){
     //     pages: ['Type this ~in page 1', 'Type *this* in page 2'],
     //     alignment: 'center, left or right'
     // }
-    const [windowSize, setWindowSize] = useState({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    
-      // we use the useEffect hook to listen to the window resize event
-      useEffect(() => {
-        window.onresize = () => {
-          setWindowSize({
-            width: window.innerWidth,
-            height: window.innerHeight,
-          });
-        };
-      }, []);    
-    const tWidth = windowSize.width/props.sizer.w;
-    const tHeight = windowSize.height/props.sizer.h;
+    const {height, width} = useWindowDimensions();
+    const tWidth = width/props.sizer.w;
+    const tHeight = height/props.sizer.h;
     const buttonDim = tWidth/45;
     return(
         <div className="terminal" style={{width: tWidth, height: tHeight}}>

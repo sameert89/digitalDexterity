@@ -6,19 +6,18 @@ import '../stylesheets/Portfolio.css';
 
 /* External Components */
 import useScrollSnap from 'react-use-scroll-snap';
-import { useRef, useState } from 'react';
+import { useRef} from 'react';
 import { GlitchImage } from 'react-glitch-image';
 import { motion } from 'framer-motion';
 
 /* Internal Components */
-
+import MainTitle from '../components/MainTitle';
 import Terminal from '../components/Terminal';
 import Title from '../components/Title';
 import Tabloid from '../components/Tabloid';
 
 /* Fonts */
 import '../fonts/consola.ttf';
-import '../fonts/cyberway.ttf';
 import '../fonts/os_condensed.ttf';
 
 /* Images */
@@ -42,12 +41,13 @@ import hireme from '../images/hiremeButton.png'
 /* Data */
 import { term1Text, term2text, term3text } from '../store/Data'
 
+
 function Portfolio() {
 
     //for page snap
     const scrollRef = useRef(null);
     useScrollSnap({ ref: scrollRef, duration: 60, delay: 20 });
-    const [vWidth, updvWidth] = useState('1.6');
+    // const [vWidth, updvWidth] = useState('1.6');
     return (
         <motion.div ref={scrollRef} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
             <div className='section1' >
@@ -56,7 +56,7 @@ function Portfolio() {
                         text={term1Text}
                         sizer={{ w: 2.3, h: 2.46, f: '1.6vw' }}
                     />
-                    <div className='title'>Digital Dexterity</div>
+                    <MainTitle text='Digital Dexterity'/>
                 </div>
                 <img className='banner_image' src={robotMistress} alt='err'></img>
             </div>

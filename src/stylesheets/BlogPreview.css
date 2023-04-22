@@ -1,0 +1,24 @@
+.blog-container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(36,36,36,0.66);
+    border-radius: 1%;
+    padding: 4vh;
+    margin-bottom: 4vh;
+}
+.text{
+    vertical-align: top;
+    margin-left: 2vw;
+}
+.heading{
+    font-family: 'Poppins';
+    font-weight: bolder;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 2vh;
+}
+.content{
+    color: #fff;
+}
