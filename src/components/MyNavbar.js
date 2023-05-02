@@ -11,7 +11,7 @@ function MyNavbar() {
                     <Link className = 'navItem' to='/' style={{ textDecoration: 'none' }}>Home</Link>
                     <Link className = 'navItem' to='blog' style={{ textDecoration: 'none' }}>Blog</Link>
                     <Nav.Link className='navItem' href="#home">Contact Me</Nav.Link>
-                    <Nav.Link className='navItem' href="#home">Console</Nav.Link>
+                    <Link className = 'navItem' to='publish' style={{ textDecoration: 'none' }}>Publish</Link>
                 </Nav>
 
             </Container>

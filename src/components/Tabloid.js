@@ -20,7 +20,7 @@ function Tabloid({src, size}){
                 y : '2vh'
             })
         }
-    }, [inView]);
+    }, [inView, animation]);
     size = size || '14vh';
     return(
         <motion.div ref={ref} animate={animation}>

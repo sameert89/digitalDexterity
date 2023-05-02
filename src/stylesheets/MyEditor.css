@@ -1,0 +1,13 @@
+.EditorBG{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 5em;
+    /* background-color: white !important; */
+    padding: 0 4em;
+}
+.ql-container {
+    background-color: white;
+  }
+.ql-toolbar{
+    background-color: white;
+}
