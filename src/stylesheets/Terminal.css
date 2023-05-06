@@ -1,21 +1,21 @@
-.terminal{
-    background-color: rgba(36,36,36,0.66);
-    padding: 1.5em;
-    border-radius: 2%;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+.terminal {
+  background-color: rgba(36, 36, 36, 0.66);
+  padding: 1.5em;
+  border-radius: 2%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
-.buttons{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    margin-bottom: 1em;
+.buttons {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-bottom: 1em;
 }
-.button{
-    z-index: 2;
-    border-radius: 50%;
-    margin: 0 0 0.5em 0.5em;
-    opacity: 1;
+.button {
+  z-index: 2;
+  border-radius: 50%;
+  margin: 0 0 0.5em 0.5em;
+  opacity: 1;
 }

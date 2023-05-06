@@ -21,12 +21,13 @@
 
 /* Sections */
 
-.section1{
+.section1 {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
-  align-items: flex-end;
+  align-items: center;
+  padding: 7vw;
 }
 
 .section2 {
@@ -34,23 +35,32 @@
   background-color: black;
   opacity: 0.9;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  text-align: center;
+  padding: 10vh 0 50vh 0;
 }
 
 .section3 {
+  padding-top: 5vh;
   height: 100vh;
+  background-color: black;
+  opacity: 0.9;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.carousel-container {
+  width: 100%;
 }
 
 .about_terminal {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 4em;
+  margin: 0 4em;
+  font-size: 1.8vw;
 }
 
 .section4 {
@@ -60,15 +70,19 @@
   align-items: center;
 }
 
-.term1 {
-  margin-top: 6em;
-  margin-left: 3em;
-  padding-bottom: 5em;
+.part1 {
+  /* padding-bottom: 5em; */
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
+.term1 {
+  margin-top: 3vw;
+  /* margin-left: 10vw; */
+}
+.coverImage {
+  margin-right: 10rem;
+}
 .section5 {
   height: 100vh;
   display: flex;
@@ -78,11 +92,12 @@
 
 /* Standalone Components */
 
-
-
 @media screen and (max-width: 1000px) {
   .title {
     font-size: 5em;
+  }
+  .about_terminal {
+    font-size: 1em !important;
   }
 }
 
@@ -92,7 +107,6 @@
   max-height: 70%;
   margin-top: 8em;
 }
-
 
 .icon_set {
   display: inline-grid;
@@ -109,13 +123,7 @@
   padding: 0 10em;
 }
 
-
-
-
-
-
-
-
-
-
-
+.contact-button {
+  width: 12rem;
+  height: 4rem;
+}

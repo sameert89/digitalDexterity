@@ -1,10 +1,10 @@
-.subHeading{
-    font-family: 'Poppins';
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    background-image: none;
-    font-size: 8vh;
-    padding-top: 1.2em;
-    margin-bottom: 1em;
+.subHeading {
+  font-family: "Poppins";
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-image: none;
+  font-size: 8vh;
+  padding-top: 5vh;
+  margin-bottom: 5vh;
 }
