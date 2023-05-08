@@ -27,26 +27,26 @@ function Carousel(props) {
   const settings = {
     infinite: true,
     lazyLoad: true,
-    speed: 300,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: 0,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     cssEase: "linear",
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     adaptiveHeight: true,
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 1,
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          swipeToSlide: true,
+        },
+      },
+    ],
     beforeChange: (current, next) => setImageIndex(next),
   };
 
@@ -54,7 +54,10 @@ function Carousel(props) {
     <div className="Carousel">
       <Slider {...settings}>
         {images.map((img, idx) => (
-          <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
+          <div
+            key={idx}
+            className={idx === imageIndex ? "slide activeSlide" : "slide"}
+          >
             <img src={img} alt={img} />
           </div>
         ))}

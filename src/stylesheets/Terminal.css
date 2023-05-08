@@ -1,21 +1,36 @@
 .terminal {
   background-color: rgba(36, 36, 36, 0.66);
-  padding: 1.5em;
+  padding: 2em;
   border-radius: 2%;
   z-index: 1;
   display: flex;
   flex-direction: column;
   text-align: left;
+  font-size: 1.2vw;
 }
 .buttons {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
 }
 .button {
   z-index: 2;
   border-radius: 50%;
-  margin: 0 0 0.5em 0.5em;
+  margin: 0 0 1vw 1vw;
   opacity: 1;
+}
+@media screen and (max-width: 600px) {
+  .terminal {
+    padding: 1.5em;
+    font-size: 3.2vw !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .terminal {
+    font-size: 2.8vw;
+  }
+  .buttons {
+    margin-bottom: 0.2em;
+  }
 }

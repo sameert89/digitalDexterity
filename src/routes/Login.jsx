@@ -9,7 +9,7 @@ function Login() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({ username: "", password: "" });
   const [message, setMessage] = useState(
-    `Demo Account => username: demo | password: demo123`
+    `Please enter your publishing credentials`
   );
   function handleChange(event) {
     const { value, name } = event.target;
@@ -70,7 +70,14 @@ function Login() {
             </button>
             <p className="bottom-note">
               {message}
-              <br></br>
+              <br />
+              <br />
+              <br />
+              <strong>Demo Account</strong>
+              <br />
+              <strong>
+                USERNAME: demo <br /> PASSWORD: demo123
+              </strong>
             </p>
           </div>
         </div>

@@ -5,6 +5,7 @@ import Portfolio from "./Portfolio";
 import ExpandedBlog from "./ExpandedBlog";
 import MyEditor from "./MyEditor";
 import Login from "./Login";
+import Contact from "./Contact";
 import ProtectedRoute from "../components/HOC/ProtectedRoute";
 function AnimatedRoutes() {
   const location = useLocation();
@@ -24,6 +25,7 @@ function AnimatedRoutes() {
             </ProtectedRoute>
           }
         ></Route>
+        <Route key={5} path="/contact" element={<Contact />}></Route>
       </Routes>
     </AnimatePresence>
   );

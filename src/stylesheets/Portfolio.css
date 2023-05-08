@@ -78,10 +78,15 @@
 }
 .term1 {
   margin-top: 3vw;
-  /* margin-left: 10vw; */
+  margin-left: 10vw;
 }
-.coverImage {
+/* .coverImage {
   margin-right: 10rem;
+} */
+.cover-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .section5 {
   height: 100vh;
@@ -91,15 +96,6 @@
 }
 
 /* Standalone Components */
-
-@media screen and (max-width: 1000px) {
-  .title {
-    font-size: 5em;
-  }
-  .about_terminal {
-    font-size: 1em !important;
-  }
-}
 
 .banner_image {
   overflow: hidden;
@@ -113,12 +109,13 @@
   gap: 4em;
   column-gap: 5em;
   grid-template-columns: repeat(4, 1fr);
+  margin-top: 6vh;
 }
 
 .btns {
   display: grid;
-  margin-top: 8em;
-  grid-template-columns: repeat(2, 1fr);
+  margin-top: 8vh;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 2em;
   padding: 0 10em;
 }
@@ -126,4 +123,35 @@
 .contact-button {
   width: 12rem;
   height: 4rem;
+}
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+  .title {
+    font-size: 5em !important;
+  }
+  .section1 {
+    /* margin-top: -1rem; */
+    padding: 0;
+  }
+  .cover-image {
+    width: 22em;
+  }
+  .term1 {
+    margin-left: 0;
+  }
+  .about_terminal {
+    font-size: 1em !important;
+  }
+  .part1 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .icon_set {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+  }
+  .btns {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

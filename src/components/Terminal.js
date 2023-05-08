@@ -36,9 +36,21 @@ function Terminal(props) {
   //     alignment: 'center, left or right'
   // }
   const { height, width } = useWindowDimensions();
-  let tWidth = width >= height ? width / props.sizer.w : height / props.sizer.h;
-  let tHeight =
-    width >= height ? height / props.sizer.h : width / props.sizer.w;
+  let tWidth = 0,
+    tHeight = 0;
+  if (width > 1000) {
+    tWidth = width / props.sizer.w;
+    tHeight = height / props.sizer.h;
+  } else if (width <= 1000 && width > 600) {
+    tWidth = height / 1.8;
+    tHeight = width / 2.5;
+  } else if (width <= 600 && width > 400) {
+    tWidth = height / 2.2;
+    tHeight = width / 3;
+  } else {
+    tWidth = height / 2.8;
+    tHeight = width / 2;
+  }
   const buttonDim = tWidth / 45;
   return (
     <div className="terminal" style={{ width: tWidth, height: tHeight }}>
@@ -72,7 +84,6 @@ function Terminal(props) {
         sequence={props.text}
         speed={40}
         style={{
-          fontSize: props.sizer.f,
           fontFamily: "Consolas",
           color: "white",
           opacity: 1,

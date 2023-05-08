@@ -1,21 +1,32 @@
-.navItem{
-    font-family: 'Open Sans Condensed Regular' !important;
-    color: white !important;
-    font-style: normal !important;
-    padding: 1.4rem !important;
-    font-size: 1.2rem !important;
-    text-decoration: none !important;
+.navItem {
+  font-family: "Open Sans Condensed Regular" !important;
+  color: white !important;
+  font-style: normal !important;
+  padding: 1.4rem !important;
+  font-size: 1.1rem !important;
+  text-decoration: none !important;
 }
-.navItem:hover{
-    color: #fe00fd !important;
+.navItem:hover {
+  color: #fe00fd !important;
 }
 .navbar > .container {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+.menu-icon svg {
+  color: white;
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 1000px) {
   .navbar {
-    margin: 0;
-    padding: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: none;
+    width: 100vw;
   }
+}
