@@ -6,7 +6,7 @@ export default function Contact() {
     <div className="form-container">
       <form
         action="https://formsubmit.co/sameertrivedi1234@gmail.com"
-        className="form"
+        className="form contact-form"
         method="POST"
       >
         <span></span>
@@ -29,7 +29,7 @@ export default function Contact() {
             />
             <textarea
               name="Message"
-              rows={6}
+              rows={3}
               className="input"
               cols={3}
               placeholder="Your Message"

@@ -41,12 +41,11 @@ function Tabloid(props) {
     fontSize = "1vw";
   } else if (width <= 1000 && width > 600) {
     size = "10vw";
+    fontSize = "2vh";
   } else {
-    console.log("hit 600");
-    fontSize = "1vh";
+    fontSize = "2vh";
     size = "20vw";
   }
-  console.log(width);
   return (
     <motion.div ref={ref} animate={animation}>
       <div className="card" style={{ width: size, height: size }}>

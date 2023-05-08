@@ -7,6 +7,7 @@
   flex-direction: column;
   text-align: left;
   font-size: 1.2vw;
+  text-overflow: clip;
 }
 .buttons {
   display: flex;

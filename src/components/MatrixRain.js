@@ -49,7 +49,7 @@ function MatrixBackground({ timeout = 50 }) {
     <div
       style={{
         // WebkitFilter: 'blur(1px)',
-        transform: "scale(1.1)",
+        // transform: "scale(1.1)",
         background: "#000000",
         overflow: "hidden",
         position: "fixed",

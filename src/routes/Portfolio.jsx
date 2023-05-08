@@ -8,7 +8,7 @@ import "../stylesheets/MyEditor.css";
 /* External Components */
 import useScrollSnap from "react-use-scroll-snap";
 import { useRef } from "react";
-import { GlitchImage } from "../components/GlitchImage/GlitchImage";
+import { GlitchImage } from "../components/GlitchImage/GlitchImage.tsx";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
@@ -120,10 +120,18 @@ function Portfolio() {
       <div className="section5">
         <Title text="Contacts"></Title>
         <div className="icon_set">
-          <Tabloid name="EMAIL" src={gmail} />
-          <Tabloid name="Linkedin" src={linkedin} />
-          <Tabloid name="Github" src={github} />
-          <Tabloid name="Discord" src={discord} />
+          <a href="mailto:sameertrivedi1234@gmail.com">
+            <Tabloid name="EMAIL" src={gmail} />
+          </a>
+          <a href="https://www.linkedin.com/in/sameert89/" target="new">
+            <Tabloid name="Linkedin" src={linkedin} />
+          </a>
+          <a href="https://github.com/sameert89" target="new">
+            <Tabloid name="Github" src={github} />
+          </a>
+          <a href="https://discord.com/users/893467323996995604" target="new">
+            <Tabloid name="Discord" src={discord} />
+          </a>
         </div>
         <div className="btns">
           <a

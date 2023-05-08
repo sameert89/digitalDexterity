@@ -1,0 +1,23 @@
+.blog-view {
+  color: white;
+  padding: 5em 10em;
+  font-family: "Poppins";
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: auto;
+  text-align: justify;
+}
+.blog-view img {
+  width: 40%;
+  /* margin-left: 35%; */
+}
+@media screen and (max-width: 1000px) {
+  .blog-view {
+    padding: 5em 2em;
+    text-align: left;
+  }
+  .blog-view img {
+    width: 50%;
+    /* margin-left: 35%; */
+  }
+}

@@ -32,7 +32,7 @@ function Login() {
     axios
       .post(url + "api/login", formData, { withCredentials: true })
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         return navigate("/publish");
       })
       .catch((error) => {
@@ -90,7 +90,7 @@ function logout() {
   axios
     .get(url + "api/logout", { withCredentials: true })
     .then((result) => {
-      console.log(result.data.message);
+      // console.log(result.data.message);
     })
     .catch((error) => {
       console.log("Unable the logout user", error.response.data.message);

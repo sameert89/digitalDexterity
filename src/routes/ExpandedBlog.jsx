@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 import parse from "html-react-parser";
+import "../stylesheets/ExpandedBlog.css";
 const apiUri = "http://localhost:5000/api/blogs";
 export default function ExpandedBlog(props) {
   const { id } = useParams();
@@ -17,9 +18,5 @@ export default function ExpandedBlog(props) {
       setThisBlog(props.data);
     }
   }, []);
-  return (
-    <div style={{ height: "100vh", width: "100vw", marginTop: "0.5em" }}>
-      {parse(thisBlog)}
-    </div>
-  );
+  return <div className="blog-view">{parse(thisBlog)}</div>;
 }

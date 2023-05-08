@@ -14,7 +14,7 @@ export default function Blog() {
   const [blogs, setBlogs] = useState(null);
   useState(() => {
     axios.get(apiUri).then((blogs) => {
-      console.log(blogs); //This logs twice because of CORS preflight request
+      // console.log(blogs); //This logs twice because of CORS preflight request
       setBlogs(
         blogs.data.map((currValue, idx) => (
           <Link
@@ -38,6 +38,7 @@ export default function Blog() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      className="blog-prev-container"
     >
       <MainTitle text="Blog" size="6rem" />
       <div className="Blogs">

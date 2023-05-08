@@ -6,7 +6,7 @@ import axios from "axios";
 import { logout } from "./Login";
 import { useNavigate } from "react-router-dom";
 const generateSignature = (callback, paramsToSign) => {
-  console.log(paramsToSign);
+  // console.log(paramsToSign);
   axios
     .post(url + "sign", paramsToSign)
     .then((response) => {
@@ -24,7 +24,7 @@ export default function MyEditor() {
   const quillRef = useRef();
   const imageHandler = (e) => {
     const editor = quillRef.current.getEditor();
-    console.log("it handled the image", editor);
+    // console.log("it handled the image", editor);
     const cloudName = "dpemgvyfd";
     const apiKey = "286935541922659";
     window.cloudinary.openUploadWidget(
@@ -53,8 +53,7 @@ export default function MyEditor() {
             "image",
             uploaded_url
           );
-          console.log(result.info.url);
-          console.log("Done!");
+          // console.log(result.info.url);
         } else if (error) {
           console.log("Oh no the upload failed here is the error: ", error);
         }

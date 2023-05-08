@@ -48,8 +48,8 @@ function Terminal(props) {
     tWidth = height / 2.2;
     tHeight = width / 3;
   } else {
-    tWidth = height / 2.8;
-    tHeight = width / 2;
+    tWidth = width / 2;
+    tHeight = height / 4;
   }
   const buttonDim = tWidth / 45;
   return (
@@ -88,6 +88,7 @@ function Terminal(props) {
           color: "white",
           opacity: 1,
           padding: "0 1em",
+          textOverflow: "clip",
         }}
         repeat={Infinity}
         omitDeletionAnimation={true}

@@ -17,8 +17,13 @@
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: regular;
 }
-
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 300;
+}
 /* Sections */
 
 .section1 {

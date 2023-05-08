@@ -8,3 +8,20 @@
   padding-top: 5vh;
   margin-bottom: 5vh;
 }
+
+@media screen and (max-width: 100px) {
+  .subHeading {
+    font-size: 6vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .subHeading {
+    font-size: 4vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .subHeading {
+    font-size: 3vh;
+    margin-bottom: 2vh;
+  }
+}

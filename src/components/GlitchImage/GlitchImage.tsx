@@ -1,11 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
+
 import {
   GlitchImageStyled,
   DivGlitchSection,
   ImgGlitch,
-  ImgGlitchBase,
-} from "./GlitchImage.styled";
-import { useSplitImage } from "./Split";
+  ImgGlitchBase, //@ts-ignore
+} from "./GlitchImage.styled.ts";
+//@ts-ignore
+import { useSplitImage } from "./Split.tsx";
 
 type GlitchImageInput = {
   image: string;

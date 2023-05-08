@@ -11,7 +11,7 @@
   position: relative;
   padding: 60px 15px;
   width: 27vw;
-  height: 69vh;
+  height: 70vh;
   background: #0c0116;
   overflow: hidden;
   box-shadow: 0px 0px 10px 0px #020003;
@@ -111,5 +111,27 @@
   100% {
     top: 0%;
     left: -98%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .form {
+    width: 45vw;
+    height: 48vh;
+  }
+  .contact-form {
+    height: 72vh !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form {
+    width: 63vw;
+    height: 46vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .form {
+    width: 83vw;
+    height: 75vh;
   }
 }

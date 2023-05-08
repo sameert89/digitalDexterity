@@ -48,41 +48,42 @@ function BlogPreview(props) {
     }
   }, [inView, animation]);
   const { height, width } = useWindowDimensions();
-  if (width > 100) {
-    const prevWidth = 0.8 * width;
-    const prevHeight = 0.4 * height;
-    return (
-      <motion.div
-        ref={ref}
-        animate={animation}
-        className="blog-container"
-        style={{ width: prevWidth, height: prevHeight }}
-      >
-        <img
-          src={props.img}
-          style={{ height: 0.8 * prevHeight }}
-          alt="BlogImage"
-        ></img>
-        <div className="text">
-          <div className="heading" style={{ fontSize: 0.03 * prevWidth }}>
-            {props.title}
-          </div>
-          <div
-            className="prev-content"
-            style={{ fontSize: 0.0165 * prevWidth }}
-          >
-            {props.content}
-          </div>
-        </div>
-      </motion.div>
-    );
+  let prevHeight, prevWidth, fontSizeT, fontSizeB;
+  if (width > 600) {
+    prevWidth = 0.8 * width;
+    prevHeight = 0.4 * height;
+    fontSizeT = 0.03 * prevWidth;
+    fontSizeB = 0.0165 * prevWidth;
   } else {
-    return (
-      <div>
-        This webpage is not optimized for your device, we are working on it
-      </div>
-    );
+    prevWidth = 0.4 * height;
+    prevHeight = 0.4 * height;
+    fontSizeT = 0.07 * prevWidth;
+    fontSizeB = 0;
   }
+  return (
+    <motion.div
+      ref={ref}
+      animate={animation}
+      className="blog-container"
+      style={{
+        width: prevWidth,
+      }}
+    >
+      <img
+        src={props.img}
+        style={{ height: 0.8 * prevHeight, paddingBottom: "0.5em" }}
+        alt="BlogImage"
+      ></img>
+      <div className="text">
+        <div className="heading" style={{ fontSize: fontSizeT }}>
+          {props.title}
+        </div>
+        <div className="prev-content" style={{ fontSize: fontSizeB }}>
+          {props.content}
+        </div>
+      </div>
+    </motion.div>
+  );
 }
 
 export default BlogPreview;

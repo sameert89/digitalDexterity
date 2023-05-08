@@ -1,5 +1,5 @@
 const term1Text = [
-  `Hello, I am Sameer, A passionate Software Developer & Tech Enthusiast. I welcome you to the realm of
+  `Hello, I am Sameer, A passionate Software Developer & Tech Enthusiast. Welcome to the realm of
 Digital Dexterity.....`,
   4000,
   `Scroll Down to know more about me, or check out my Blog by clicking on the Menu!!`,
