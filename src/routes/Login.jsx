@@ -4,7 +4,7 @@ import "../fonts/cyberway.ttf";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-const url = "http://localhost:5000/";
+const url = "https://dd-server.onrender.com/";
 function Login() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({ username: "", password: "" });
@@ -32,7 +32,7 @@ function Login() {
     axios
       .post(url + "api/login", formData, { withCredentials: true })
       .then((response) => {
-        // console.log(response);
+        console.log(response);
         return navigate("/publish");
       })
       .catch((error) => {

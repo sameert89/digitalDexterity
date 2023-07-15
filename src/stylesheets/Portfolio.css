@@ -160,3 +160,12 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+.snap-container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.snap-item {
+  scroll-snap-align: center;
+}

@@ -19,7 +19,7 @@ const generateSignature = (callback, paramsToSign) => {
     });
 };
 
-const url = "http://localhost:5000/api/";
+const url = "https://dd-server.onrender.com/api/";
 export default function MyEditor() {
   const quillRef = useRef();
   const imageHandler = (e) => {

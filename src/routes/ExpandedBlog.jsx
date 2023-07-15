@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import parse from "html-react-parser";
 import "../stylesheets/ExpandedBlog.css";
-const apiUri = "http://localhost:5000/api/blogs";
+const apiUri = "https://dd-server.onrender.com/api/blogs";
 export default function ExpandedBlog(props) {
   const { id } = useParams();
   const [thisBlog, setThisBlog] = useState("");

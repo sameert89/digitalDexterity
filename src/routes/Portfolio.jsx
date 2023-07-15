@@ -6,8 +6,8 @@ import "../stylesheets/Portfolio.css";
 import "../stylesheets/MyEditor.css";
 
 /* External Components */
-import useScrollSnap from "react-use-scroll-snap";
-import { useRef } from "react";
+// import useScrollSnap from "react-use-scroll-snap";
+// import { useRef, useEffect } from "react";
 import { GlitchImage } from "../components/GlitchImage/GlitchImage.tsx";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
@@ -48,17 +48,14 @@ import Carousel from "../components/Carousel";
 import { Link } from "react-router-dom";
 
 function Portfolio() {
-  //for page snap
-  const scrollRef = useRef(null);
-  useScrollSnap({ ref: scrollRef, duration: 60, delay: 20 });
   return (
     <motion.div
-      ref={scrollRef}
+      className="snap-container"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="section1">
+      <div className="section1 snap-item">
         <div className="part1">
           <div className="term1">
             <Terminal text={term1Text} sizer={{ w: 2.7, h: 2.46 }} />
@@ -76,7 +73,7 @@ function Portfolio() {
         </div>
         <MainTitle text="Digital Dexterity" />
       </div>
-      <div className="section2">
+      <div className="section2 snap-item">
         <Title text="About" />
         <div className="about_terminal">
           <TypeAnimation
@@ -94,7 +91,7 @@ function Portfolio() {
           />
         </div>
       </div>
-      <div className="section4">
+      <div className="section4 snap-item">
         <Title text="Skills" />
         <div className="icon_set">
           <Tabloid name="HTML" src={html}></Tabloid>
@@ -111,13 +108,13 @@ function Portfolio() {
           <Tabloid name="ML" src={ml}></Tabloid>
         </div>
       </div>
-      <div className="section3">
+      <div className="section3 snap-item">
         <Title text={"My Projects"} />
         <div className="carousel-container">
           <Carousel />
         </div>
       </div>
-      <div className="section5">
+      <div className="section5 snap-item">
         <Title text="Contacts"></Title>
         <div className="icon_set">
           <a href="mailto:sameertrivedi1234@gmail.com">

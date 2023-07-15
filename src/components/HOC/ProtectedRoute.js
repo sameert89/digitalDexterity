@@ -4,11 +4,12 @@ import axios from "axios";
 const ProtectedRoute = (props) => {
   const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const url = "http://localhost:5000/";
+  const url = "https://dd-server.onrender.com/";
   const checkUserToken = () => {
     axios
       .get(url + "api/authenticate", { withCredentials: true })
       .then((response) => {
+        console.log(response);
         if (response.data.auth) setIsLoggedIn(true);
         else return navigate("/login");
       })

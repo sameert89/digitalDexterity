@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 // import { sampleBlog } from '../store/Data'
 import "../stylesheets/Blog.css";
 
-const apiUri = "http://localhost:5000/api/blogs";
+const apiUri = "https://dd-server.onrender.com/api/blogs";
 
 export default function Blog() {
   const [blogs, setBlogs] = useState(null);
