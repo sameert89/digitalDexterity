@@ -62,7 +62,7 @@ export default function MyEditor() {
   };
   const modules = useMemo(
     () => ({
-      //!use literal object as modules props, it will trigger component rerender , use useMemo hook to memorize modules prop to fix it.
+      //!use literal object as modules props, it will trigger component rerender , use useMemo hook to memoize modules prop to fix it.
       toolbar: {
         container: [
           [
@@ -138,7 +138,7 @@ export default function MyEditor() {
       <ReactQuill
         theme="snow"
         ref={quillRef}
-        modules={modules}
+        modules={modules} //This must be using useState behind the scenes or something since we are advised to use useMemo here
         formats={formats}
         value={value}
         placeholder="Write Something Awesome!"

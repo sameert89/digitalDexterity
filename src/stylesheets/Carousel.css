@@ -54,3 +54,9 @@
   left: 0%;
   top: 50%;
 }
+
+@media screen and (max-width: 1000px) {
+  .activeSlide {
+    transform: scale(0.8);
+  }
+}
