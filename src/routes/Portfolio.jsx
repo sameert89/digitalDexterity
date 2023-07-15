@@ -41,7 +41,10 @@ import gmail from "../images/gmail.png";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
 import discord from "../images/discord_chat.png";
-import project from "../images/project_3.png";
+import project1 from "../images/project_1.png";
+import project2 from "../images/project_2.png";
+import project3 from "../images/project_3.png";
+import project4 from "../images/project_4.png";
 /* Data */
 import { term1Text, term2text } from "../store/Data";
 import Carousel from "../components/Carousel";
@@ -111,7 +114,7 @@ function Portfolio() {
       <div className="section3 snap-item">
         <Title text={"My Projects"} />
         <div className="carousel-container">
-          <Carousel />
+          <Carousel images={[project1, project2, project3, project4]} />
         </div>
       </div>
       <div className="section5 snap-item">
