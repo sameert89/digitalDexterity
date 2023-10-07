@@ -19,7 +19,7 @@ const generateSignature = (callback, paramsToSign) => {
     });
 };
 
-const url = "https://dd-server.onrender.com/api/";
+const url = "https://calm-jade-sea-lion-hat.cyclic.cloud/api/";
 export default function MyEditor() {
   const quillRef = useRef();
   const imageHandler = (e) => {

@@ -4,7 +4,7 @@ import "../fonts/cyberway.ttf";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-const url = "https://dd-server.onrender.com/";
+const url = "https://calm-jade-sea-lion-hat.cyclic.cloud/";
 function Login() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({ username: "", password: "" });

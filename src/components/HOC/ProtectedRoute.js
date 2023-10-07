@@ -4,7 +4,7 @@ import axios from "axios";
 const ProtectedRoute = (props) => {
   const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const url = "https://dd-server.onrender.com/";
+  const url = "https://calm-jade-sea-lion-hat.cyclic.cloud/";
   const checkUserToken = () => {
     axios
       .get(url + "api/authenticate", { withCredentials: true })
