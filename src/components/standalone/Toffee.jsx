@@ -35,16 +35,13 @@ function Toffee(props) {
     }
   }, [inView, animation]);
   let size = 0,
-    fontSize = 0;
+    fontSize = "0.5rem";
   if (width > 1000) {
     size = "5rem";
-    fontSize = "0.75rem";
   } else if (width <= 1000 && width > 600) {
     size = "5rem";
-    fontSize = "2rem";
   } else {
     size = "3rem";
-    fontSize = "2rem";
   }
   return (
     <motion.div ref={ref} animate={animation}>
