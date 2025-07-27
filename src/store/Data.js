@@ -1,25 +1,85 @@
-const term1Text = [
-  `Hello, I am Sameer, A passionate Software Developer & Tech Enthusiast. Welcome to the realm of
-Digital Dexterity.....`,
+const about = [
+  `Hey, I'm Sameer. I write code that (usually) doesn't break at 3am 😁.`,
   4000,
-  `Scroll Down to know more about me, or check out my Blog by clicking on the Menu!!`,
+  `From Hardware tinkering to Kubernetes orchestration, if it computes, I am interested! This site? Running on a Pi in my room right now.`,
   4000,
 ];
 
-const term2text = [
-  `Welcome to my portfolio! As per my belief, the more you learn, the more you grow and I have a great passion for learning. Currently, I am pursuing B.Tech from NIT Raipur and I am obsessed with software. I am always eager to explore new domains such as web3 and AI and would be thrilled to work with you. Please take a look at some of my work showcased below, and don't forget to fill out the contact form. I will get back to you as soon as possible.`,
-  4000,
-];
-const term3text = [
+const projectDescriptions = [
+    `
+<div style="font-family: 'JetBrains Mono', sans-serif; color: white; padding: 1.25rem; line-height: 1.5;">
+ <h3 style="margin: 0 0 1.25rem 0; color: #f8fafc; font-size: 1.5rem; font-weight: 600;">Ctrl + Caffeine 🍵</h3>
+ <p style="margin: 0 0 1rem 0;">
+    Personal blog documenting latest technologies and projects. Built on JAMstack for maximum performance.
+ </p>
+ <p style="margin: 0 0 1rem 0;">
+   <strong style="color: #cbd5e1;">Techstack:</strong> 
+   <span style="color: #f6ad55; background: rgba(246, 173, 85, 0.1); padding: 0.125rem 0.375rem; border-radius: 0.25rem; margin: 0 0.25rem;">Rust</span>
+   <span style="color: #63b3ed; background: rgba(99, 179, 237, 0.1); padding: 0.125rem 0.375rem; border-radius: 0.25rem; margin: 0 0.25rem;">Zola SSG</span>
+   <span style="color: #68d391; background: rgba(104, 211, 145, 0.1); padding: 0.125rem 0.375rem; border-radius: 0.25rem; margin: 0 0.25rem;">GitHub Actions</span>
+   <span style="color: #9f7aea; background: rgba(159, 122, 234, 0.1); padding: 0.125rem 0.375rem; border-radius: 0.25rem; margin: 0 0.25rem;">JAMstack</span>
+ </p>
+ <p style="margin: 0 0 0.75rem 0;">
+   <strong style="color: #cbd5e1;">Features:</strong>
+ </p>
+ <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.9rem; color: #e2e8f0;">
+   <li style="margin-bottom: 0.375rem;">Lightning-fast static generation</li>
+   <li style="margin-bottom: 0.375rem;">Custom CI/CD pipeline with automated deployment</li>
+   <li style="margin-bottom: 0.375rem;">SEO optimized with syntax highlighting</li>
+ </ul>
+ <a style="font-size:1rem" href="https://blog.kernelrider.in/">Link to Demo</a>
+</div>
+<br>
+ `,
+   `
+<div style="font-family: 'JetBrains Mono', sans-serif; color: white; padding: 1.25rem; line-height: 1.5;">
+ <h3 style="margin: 0 0 1.25rem 0; color: #f8fafc; font-size: 1.5rem; font-weight: 600;">BitBinder</h3>
+ <p style="margin: 0 0 1rem 0;">
+    My digital notes open sourced on GitHub. A knowledge vault with custom publishing stack bringing Obsidian to the web.
+ </p>
+ <p style="margin: 0 0 1rem 0;">
+   <strong style="color: #cbd5e1;">Techstack:</strong> 
+   <span style="color: #805ad5; background: rgba(128, 90, 213, 0.1); padding: 0.125rem 0.375rem; border-radius: 0.25rem; margin: 0 0.25rem;">Obsidian.md</span>
+   <span style="color: #4299e1; background: rgba(66, 153, 225, 0.1); padding: 0.125rem 0.375rem; border-radius: 0.25rem; margin: 0 0.25rem;">Custom Publish Stack</span>
+   <span style="color: #ed8936; background: rgba(237, 137, 54, 0.1); padding: 0.125rem 0.375rem; border-radius: 0.25rem; margin: 0 0.25rem;">GitHub Pages</span>
+ </p>
+ <p style="margin: 0 0 0.75rem 0;">
+   <strong style="color: #cbd5e1;">Features:</strong>
+ </p>
+ <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.9rem; color: #e2e8f0;">
+   <li style="margin-bottom: 0.375rem;">Full Obsidian UI with interactive graph view</li>
+   <li style="margin-bottom: 0.375rem;">Multiple themed vaults and advanced tagging</li>
+   <li style="margin-bottom: 0.375rem;">Excalidraw integration and powerful search</li>
+ </ul>
+ <a style="font-size:1rem" href="https://notes.kernelrider.in/">Link to Demo</a>
+</div>
+<br>
+ `,
   `
+<div style="font-family: 'JetBrains Mono', sans-serif; color: white; padding: 1.25rem; line-height: 1.5;">
+ <h3 style="margin: 0 0 1.25rem 0; color: #f8fafc; font-size: 1.5rem; font-weight: 600;">CoinKeeper</h3>
+ <p style="margin: 0 0 1rem 0;">
+    I have no idea how much money is in my bank account. And at this point I am too afraid to check.
+ </p>
+ <p style="margin: 0 0 1rem 0;">
+   <strong style="color: #cbd5e1;">Techstack:</strong> 
+   <span style="color: #68d391; background: rgba(104, 211, 145, 0.1); padding: 0.125rem 0.375rem; border-radius: 0.25rem; margin: 0 0.25rem;">Node.js</span>
+   <span style="color: #9f7aea; background: rgba(159, 122, 234, 0.1); padding: 0.125rem 0.375rem; border-radius: 0.25rem; margin: 0 0.25rem;">Express</span>
+   <span style="color: #48bb78; background: rgba(72, 187, 120, 0.1); padding: 0.125rem 0.375rem; border-radius: 0.25rem; margin: 0 0.25rem;">MongoDB</span>
+   <span style="color: #f56565; background: rgba(245, 101, 101, 0.1); padding: 0.125rem 0.375rem; border-radius: 0.25rem; margin: 0 0.25rem;">Angular 17</span>
+ </p>
+ <p style="margin: 0 0 0.75rem 0;">
+   <strong style="color: #cbd5e1;">Features:</strong>
+ </p>
+ <ul style="margin: 0; padding-left: 1.25rem; font-size: 0.9rem; color: #e2e8f0;">
+   <li style="margin-bottom: 0.375rem;">Responsive UI with custom auth</li>
+   <li style="margin-bottom: 0.375rem;">Data encryption and budget tracking</li>
+   <li style="margin-bottom: 0.375rem;">AI auto-logging with GPT & voice recognition</li>
+ </ul>
+ <a style="font-size:1rem" href="https://coinkeeper.kernelrider.in/">Link to Demo</a>
+</div>
+<br>
+ `,
 
-    I am Sameer Trivedi, a highly skilled and motivated Full Stack Developer with a true passion for technology and a relentless commitment to excellence. My expertise includes programming languages such as C++, JavaScript, and Python, as well as web development technologies like HTML, CSS3, NodeJS, and ReactJS. With a solid foundation in data structures, algorithms, and machine learning, coupled with my creativity in graphic design and professional writing, I am a well-rounded and versatile developer. I take pride in my continuous learning mindset, evident through my achievements, including being a finalist at the Pitch the Peculiar Hackathon and obtaining Specialist status on codestudio by Coding Ninjas. As a team leader and coordinator, I excel in managing company visits, leading teams, and actively contributing to various projects and events. My unwavering pursuit of excellence, combined with my technical expertise and leadership capabilities, make me a valuable asset to any organization.`,
-  4000,
 ];
-
-const sampleBlog = {
-  title: "The Dangers of Quantum Computers",
-  content:
-    "Quantum computers are powerful machines that can perform complex calculations much faster than classical computers. However, they also pose some dangers to society and security. For example, quantum computers could break the encryption systems that protect our data and communications, or create new forms of cyberattacks and warfare. Therefore, we need to develop quantum-resistant cryptography and ethical guidelines for the use of quantum technology.",
-};
-export { term1Text, term2text, term3text, sampleBlog };
+export { about, projectDescriptions };

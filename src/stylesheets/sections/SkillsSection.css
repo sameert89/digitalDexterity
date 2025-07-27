@@ -1,0 +1,38 @@
+.skills-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3rem 0 3rem;
+  background-color: black;
+  opacity: 0.9;
+  padding-bottom: 4rem;
+}
+
+.skill-grid-container {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 0 2rem;
+}
+.skill-section-title {
+  font-family: "Poppins";
+  font-weight: 500;
+  height: 4rem;
+  color: white;
+  margin: 2rem 0 2rem 0;
+}
+.skill-icon-grid {
+  display: inline-grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 1000px) {
+  .skill-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
