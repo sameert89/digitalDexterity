@@ -1,0 +1,27 @@
+.subHeading {
+  font-family: "Poppins";
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-image: none;
+  font-size: 3.75rem;
+  padding-top: 3vh;
+  margin-bottom: 1vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .subHeading {
+    font-size: 6vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .subHeading {
+    font-size: 4vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .subHeading {
+    font-size: 3vh;
+    margin-bottom: 2vh;
+  }
+}
