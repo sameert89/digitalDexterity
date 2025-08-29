@@ -16,7 +16,7 @@ const ProjectsSection = () => {
   };
   return (
     <div className="projects-section">
-      <Title text={"My Projects"} />
+      <Title text={"Code Nexus"} />
       <div className="carousel-container">
         <div className="carousel">
           <img src={images.macbook} alt="macbook" />
