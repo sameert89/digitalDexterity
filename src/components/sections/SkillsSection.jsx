@@ -7,7 +7,7 @@ import "../../stylesheets/sections/SkillsSection.css"
 const SkillsSection = () => {
   return (
     <div className="skills-section">
-      <Title text="Skillset.exe" />
+      <Title text="Skills" />
       <div className="skill-grid-container">
         <div className="skill-category">
           <h2 className="skill-section-title">Programming Languages</h2>
